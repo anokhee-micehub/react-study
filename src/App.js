@@ -1,6 +1,6 @@
 import React from 'react'
 
-const random = Math.floor(Math.random() * (5 - -5)) + -5;
+const random = Math.floor(Math.random() * (5 - -5 + 1)) + -5;
 
 function HellowWorld() {
     return <h1>Hello World {random}</h1>;
