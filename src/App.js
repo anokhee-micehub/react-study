@@ -1,12 +1,24 @@
 import React from 'react'
 
-const HellowWorld = () => <h1>Hello World</h1>;
+const random = Math.floor(Math.random() * (5 - -5)) + -5;
 
-const App = () => (
-    <div>
-        App
-        <HellowWorld />
-    </div>
-);
+function HellowWorld() {
+    return <h1>Hello World {random}</h1>;
+} 
+
+function App() {
+    return(
+        <div>
+            App
+            <HellowWorld />
+        </div>
+    )
+}
+// const App = () => (
+//     <div>
+//         App
+//         <HellowWorld />
+//     </div>
+// );
 
 export default App
