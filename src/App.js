@@ -1,24 +1,14 @@
-import React from 'react'
-
-const random = Math.floor(Math.random() * (5 - -5)) + -5;
-
-function HellowWorld() {
-    return <h1>Hello World {random}</h1>;
-} 
+import React from "react";
+import CssModuleCard from "./components/CssModuleCard";
+import StyleCard from "./components/StyleCard";
 
 function App() {
-    return(
-        <div>
-            App
-            <HellowWorld />
-        </div>
-    )
+  return (
+    <div>
+      <StyleCard />
+      <CssModuleCard />
+    </div>
+  );
 }
-// const App = () => (
-//     <div>
-//         App
-//         <HellowWorld />
-//     </div>
-// );
 
-export default App
+export default App;
