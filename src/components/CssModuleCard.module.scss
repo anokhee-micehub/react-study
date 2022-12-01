@@ -1,10 +1,14 @@
 @use "../styles/button" as btn;
 
+$border-color: #dee2e6;
+$max-width: 360px;
+$default-gap: 16px;
+
 /* CssModuleCard.module.scss */
 .box {
   max-width: 360px;
-  border-radius: calc(btn.$default-gap / 2);
-  border: 1px solid btn.$border-color;
+  border-radius: calc($default-gap / 2);
+  border: 1px solid $border-color;
   overflow: hidden;
 
   figure {
@@ -22,8 +26,8 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: btn.$default-gap;
-    margin: btn.$default-gap;
+    gap: $default-gap;
+    margin: $default-gap;
 
     h3 {
       flex: 1;
@@ -44,7 +48,7 @@
   }
 
   .summary {
-    margin: btn.$default-gap;
+    margin: $default-gap;
     line-height: 1.666;
     color: #000000cc;
   }
@@ -52,11 +56,11 @@
   .footer {
     display: flex;
     flex-flow: row;
-    gap: btn.$default-gap;
+    gap: $default-gap;
     align-items: stretch;
     justify-content: flex-end;
-    padding: calc(btn.$default-gap / 2) btn.$default-gap btn.$default-gap btn.$default-gap;
-    border-top: 1px solid btn.$border-color;
+    padding: calc($default-gap / 2) $default-gap $default-gap $default-gap;
+    border-top: 1px solid $border-color;
 
     .button.btn-details {
       flex: 1;
