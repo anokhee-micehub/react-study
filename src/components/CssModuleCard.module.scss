@@ -72,19 +72,20 @@ $default-gap: 16px;
       color: #fa5252;
       font-size: 18px;
     }
-    .button {
-      /* mixin1 */
-      @include btn.button;
-
-      /* mixin2 */
-      // @include button {
-      //   &.primary {
-      //     @include primary;
-      //   }
-      //   &.default {
-      //     @include default;
-      //   }
-      // }
-    }
   }
+}
+
+.button {
+  /* mixin1 */
+  @include btn.button;
+
+  /* mixin2 */
+  // @include button {
+  //   &.primary {
+  //     @include primary;
+  //   }
+  //   &.default {
+  //     @include default;
+  //   }
+  // }
 }
