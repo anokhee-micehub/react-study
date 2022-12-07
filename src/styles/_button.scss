@@ -1,4 +1,4 @@
-$default-gap: 16px;
+$_default-gap: 16px;
 
 /* mixin1 */
 @mixin button($type: false) {
@@ -7,9 +7,9 @@ $default-gap: 16px;
   align-items: center;
   justify-content: center;
   height: 36px;
-  padding: 0px $default-gap;
+  padding: 0px $_default-gap;
   border: 1px solid transparent;
-  border-radius: calc($default-gap / 2);
+  border-radius: calc($_default-gap / 2);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
@@ -46,9 +46,9 @@ $default-gap: 16px;
 //   align-items: center;
 //   justify-content: center;
 //   height: 36px;
-//   padding: 0px $default-gap;
+//   padding: 0px $_default-gap;
 //   border: 1px solid transparent;
-//   border-radius: calc($default-gap / 2);
+//   border-radius: calc($_default-gap / 2);
 //   font-size: 14px;
 //   font-weight: 700;
 //   text-decoration: none;
@@ -74,9 +74,9 @@ $default-gap: 16px;
 //   align-items: center;
 //   justify-content: center;
 //   height: 36px;
-//   padding: 0px $default-gap;
+//   padding: 0px $_default-gap;
 //   border: 1px solid transparent;
-//   border-radius: calc($default-gap / 2);
+//   border-radius: calc($_default-gap / 2);
 //   font-size: 14px;
 //   font-weight: 700;
 //   text-decoration: none;
