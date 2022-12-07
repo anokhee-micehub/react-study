@@ -16,16 +16,12 @@ $_default-gap: 16px;
   cursor: pointer;
 
   @if ($type == "primary") {
-    &.primary {
-      background-color: #228be6;
-      color: #ffffff;
-    }
+    background-color: #228be6;
+    color: #ffffff;
   } @else if($type == "default") {
-    &.default {
-      border-color: #ced4da;
-      background-color: #ffffff;
-      color: #000000;
-    }
+    border-color: #ced4da;
+    background-color: #ffffff;
+    color: #000000;
   } @else {
     &.primary {
       background-color: #228be6;
