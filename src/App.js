@@ -1,6 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { Chip, chipClasses } from "@mui/material";
 import MaterialCard from "./components/MaterialCard";
+import MuiBoxList from "./components/MuiBoxList";
 // import CssModuleCard from "./components/CssModuleCard";
 import StyledCard from "./components/StyledCard";
 
@@ -34,6 +36,24 @@ const propsObj = {
 function App() {
   return (
     <div>
+      <Chip
+        label="oki"
+        variant="outlined"
+        color="success"
+        onDelete={() => {}}
+        sx={{
+          [`& .${chipClasses.label}`]: {
+            fontWeight: "bold",
+          },
+          [`& .${chipClasses.deleteIcon}`]: {
+            color: "error.main",
+            ":hover, :active": {
+              color: "error.dark",
+            },
+          },
+        }}
+      />
+      <MuiBoxList />
       <MaterialCard />
       <ThemeProvider theme={blueTheme}>
         <StyledCard {...propsObj} />
