@@ -34,7 +34,7 @@ const HomePage = () => {
         <Box p={2}>
           <Link
             component={NavLink}
-            to="/material-card"
+            to="/portfoilo"
             sx={css`
               &.active {
                 color: #787887;
@@ -42,7 +42,21 @@ const HomePage = () => {
               }
             `}
           >
-            Material Card
+            Portfoilo
+          </Link>
+        </Box>
+        <Box p={2}>
+          <Link
+            component={NavLink}
+            to="/cards"
+            sx={css`
+              &.active {
+                color: #787887;
+                font-weight: bold;
+              }
+            `}
+          >
+            Card
           </Link>
         </Box>
         <Box p={2}>

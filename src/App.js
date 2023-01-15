@@ -15,6 +15,9 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import { ButtonsPage } from "./pages/ButtonsPage";
 import PaletteDisplay from "./components/PaletteDisplay";
+import { CardsPage } from "./pages/CardsPage";
+import CardDisplay from "./components/CardDisplay";
+import { PortfolioPage } from "./pages/PortfolioPage";
 
 const muiTheme = createTheme({
   palette: {
@@ -106,13 +109,16 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />}>
         <Route index element={<Typography variant="h3">홈페이지</Typography>} />
-        <Route path="material-card" element={<MaterialCard />} />
+        <Route path="cards" element={<CardsPage />}>
+          <Route path=":param" element={<CardDisplay />} />
+        </Route>
         <Route path="buttons" element={<ButtonsPage />}>
           <Route path=":variant" element={<PaletteDisplay />} />
         </Route>
         <Route path="chip" element={<Chip label="React Router" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
+      <Route path="portfoilo" element={<PortfolioPage />} />
     </Routes>
   </ThemeProvider>
 );
